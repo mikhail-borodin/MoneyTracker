@@ -4,5 +4,6 @@
     <string name="et_name_hint">Название</string>
     <string name="et_price_hint">0</string>
     <string name="currency_sign">₽</string>
-
+    <string name="activity_items_list_title">Учет бюджета</string>
+    <string name="price_format">%1$d ₽</string>
 </resources>
