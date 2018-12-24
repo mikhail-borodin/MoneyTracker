@@ -3,54 +3,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/bg_pattern"
+    android:orientation="vertical"
     tools:context=".AddItemActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="8dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="68dp"
-        android:orientation="horizontal"
-        android:paddingLeft="22dp"
-        android:paddingRight="22dp"
+        android:background="@color/white"
         android:gravity="center_vertical"
-        android:background="@color/white">
+        android:orientation="horizontal"
+        android:elevation="4dp"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp">
 
         <EditText
             android:id="@+id/name"
-            android:hint="@string/et_name_hint"
-            android:background="@null"
-            android:layout_weight="1"
-            android:inputType="text"
             android:layout_width="match_parent"
-            android:maxLines="1"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/et_name_hint"
+            android:inputType="text"
+            android:maxLines="1" />
 
         <EditText
             android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@null"
             android:gravity="right"
             android:hint="@string/et_price_hint"
-            android:background="@null"
-            android:layout_weight="1"
-            android:layout_width="match_parent"
             android:inputType="number"
-            android:maxLines="1"
-            android:layout_height="wrap_content" />
+            android:maxLines="1" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="4dp"
-            android:textSize="17sp"
-            android:text="@string/currency_sign"/>
+            android:text="@string/currency_sign"
+            android:textSize="17sp" />
 
         <Button
-            android:enabled="false"
             android:id="@+id/add_btn"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
             android:layout_marginLeft="22dp"
             android:background="@drawable/ic_add"
-            android:layout_width="26dp"
-            android:layout_height="26dp" />
+            android:enabled="false" />
 
     </LinearLayout>
 
